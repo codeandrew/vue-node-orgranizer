@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Home from '../pages/home'
+import Home from '../pages/public/home'
 import About from '../pages/about'
 import Example from '../pages/example'
 
