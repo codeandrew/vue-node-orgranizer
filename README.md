@@ -1,6 +1,5 @@
-# codeandrew-github
-
-> A Vue.js template
+# Vue Node Project Organizer
+> A Project Organizer made in vue and nodejs
 
 ### Dependencies
 - Vue Router
