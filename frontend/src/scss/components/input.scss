@@ -1,0 +1,42 @@
+input {
+  padding : 8px 16px;
+  outline: 0;
+
+  box-shadow: inset 4px 4px 10px #ddd;
+
+  &:active , &:focus {
+    box-shadow: 6px 6px 22px #ddd;
+  }
+  &[type=submit]{
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 4px #ddd ;
+  }
+}
+
+.input-logs {
+  margin-top: 40px;
+  input {
+    width: 50vw;
+    display: block;
+    margin: 0 auto {
+      top:8px;
+      bottom: 16px;
+    }
+
+  }
+  ::-webkit-input-placeholder {
+   text-align: center;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     text-align: center;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     text-align: center;
+  }
+
+  :-ms-input-placeholder {
+     text-align: center;
+  }
+}
