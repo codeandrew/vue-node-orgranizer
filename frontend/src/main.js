@@ -19,11 +19,21 @@ import footer from './common/footer'
 import infoCol from './components/info-col'
 import infoSection from './components/info-section'
 
+import ProjectManager from './components/ProjectManager'
+import finishedCol from './components/ProjectManager/finished'
+import logCol from './components/ProjectManager/log'
+import onGoingCol from './components/ProjectManager/on-going'
+
+
 Vue.component('head-component', header )
 Vue.component('foot-component', footer )
 Vue.component('info-col', infoCol )
 Vue.component('infoSection', infoSection )
 
+Vue.component('project-manager', ProjectManager)
+Vue.component('finished-col', finishedCol)
+Vue.component('log-col', logCol )
+Vue.component('on-going-col', onGoingCol )
 
 //==================
 
