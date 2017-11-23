@@ -1,6 +1,8 @@
 # Vue Node Project Organizer
 > A Project Organizer made in vue and nodejs
 
+## Front End Folder
+
 ### Dependencies
 - Vue Router
 - Sass
