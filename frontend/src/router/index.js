@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Home from '../pages/public/home'
-import About from '../pages/about'
-import Example from '../pages/example'
+import ProjectManagerPage from '../pages/private/ProjectManagerPage'
 
 Vue.use(Router)
 
@@ -16,14 +14,9 @@ export default new Router({
       component : Home
     },
     {
-      path: '/about',
-      name : 'about',
-      component : About
-    },
-    {
-      path: '/example',
-      name : 'example',
-      component : Example
+      path : '/project1',
+      name: 'Project Manager',
+      component : ProjectManagerPage
     }
   ]
 })
