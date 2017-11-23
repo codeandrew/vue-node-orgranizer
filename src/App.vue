@@ -2,7 +2,7 @@
   <div id="app">
     <head-component/>
       <router-view/>
-    <foot-component/>
+    <!-- <foot-component/> -->
   </div>
 </template>
 

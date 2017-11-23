@@ -1,22 +1,17 @@
 <template lang="html">
-  <div class="nav-header">
-    <b-container>
-      <div class="navbrand">
-        <h2>NavBrand </h2>
-      </div>
-
-      <div>
-        <ul class="navbar-nav">
-          <router-link v-for="item in menu"
-          tag='li' key='item.name' class="nav-link"
-          :to="item.to">
-            <a > {{ item.name }}</a>
-          </router-link>
-        </ul>
-      </div>
-    </b-container>
-
-  </div>
+  <nav>
+   <div class="menuToggle">
+     <input type="checkbox"/>
+     <span></span>
+     <span></span>
+     <span></span>
+     <ul id="menu">
+       <li v-for="(item, key) in menu">
+         <a :href="item.to"> {{ item.name }}</a>
+       </li>
+     </ul>
+   </div>
+ </nav>
 </template>
 
 <script>
@@ -25,8 +20,9 @@ export default {
     return {
       menu : [
         { name : 'home', to : '/'},
-        { name : 'about', to : '/about'},
-        { name : 'example', to : '/example'}
+        { name : 'project 1', to : '/project1'},
+        { name : 'project 2', to : '/project2'},
+        { name : 'project 3', to : '/project3'}
       ]
     }
   }
