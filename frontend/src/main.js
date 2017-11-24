@@ -2,7 +2,6 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -38,11 +37,15 @@ Vue.component('on-going-col', onGoingCol )
 
 //==================
 
+import router from './router'
+
+
+
 /* eslint-disable no-new */
-new Vue({
+const app = new Vue({
   store : store,
   el: '#app',
   router,
   template: '<App/>',
-  components:  { App }
+  components:  { App },
 })

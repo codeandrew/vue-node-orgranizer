@@ -4,8 +4,8 @@
       <h1>Project Organizer</h1>
       <div class="input-logs">
         <form @submit="onSubmit" method="post">
-          <input type="text" name="username" value="" placeholder="username">
-          <input type="password" name="password" value="" placeholder="password">
+          <input type="email" v-model="user.email" name="email" value="" placeholder="Email">
+          <input type="password" v-model="user.password" name="password" value="" placeholder="Password">
           <input type="submit" value="login">
         </form>
       </div>
@@ -15,11 +15,22 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex'
 export default {
+  data() {
+    return {
+      user: {
+        email: '',
+        password: ''
+      }
+    }
+  },
   methods :{
+    ...mapActions(['login', 'verifyAuthentication']),
     onSubmit(evt){
       evt.preventDefault()
-      this.$router.push('project')
+      this.login(this.user)
+      // this.$router.push('project')
     }
   }
 }
