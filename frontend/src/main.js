@@ -7,6 +7,7 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Vuex from 'vuex'
+import { store } from './store'
 
 Vue.use(Vuex)
 Vue.use(BootstrapVue)
@@ -39,6 +40,7 @@ Vue.component('on-going-col', onGoingCol )
 
 /* eslint-disable no-new */
 new Vue({
+  store : store,
   el: '#app',
   router,
   template: '<App/>',
