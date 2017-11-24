@@ -1,3 +1,8 @@
+require('dotenv').config()
+
+const admin = require('./firebase-admin');
+const firebase = require('./firebase');
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
