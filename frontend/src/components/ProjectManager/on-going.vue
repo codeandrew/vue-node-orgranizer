@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="on-going-col">
+  <div class="on-going-col item item-2">
     <h2>GOING</h2>
   </div>
 </template>

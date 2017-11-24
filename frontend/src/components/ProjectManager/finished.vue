@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="finished-col">
+  <div class="finished-col item item-3">
     <h2>Finished Task</h2>
   </div>
 </template>
